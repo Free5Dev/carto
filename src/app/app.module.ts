@@ -8,7 +8,6 @@ import { MapComponent } from './map/map.component';
 import { BookmarkerComponent } from './bookmarker/bookmarker.component';
 import { ZoomSliderComponent } from './zoom-slider/zoom-slider.component';
 import { FullScreenComponent } from './full-screen/full-screen.component';
-import { LayerSwitcherComponent } from './layer-switcher/layer-switcher.component';
 import { PrintControlComponent } from './print-control/print-control.component';
 import { LayerListComponent } from './layer-list/layer-list.component';
 import { BaselayerListComponent } from './baselayer-list/baselayer-list.component';
@@ -23,7 +22,6 @@ import { WfsComponent } from './wfs/wfs.component';
     BookmarkerComponent,
     ZoomSliderComponent,
     FullScreenComponent,
-    LayerSwitcherComponent,
     PrintControlComponent,
     LayerListComponent,
     BaselayerListComponent,

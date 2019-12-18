@@ -14,7 +14,6 @@ import { IgnLayerModel } from './layer/model/ign-layer-model.model';
 import Geoportail from 'ol-ext/layer/Geoportail';
 import ImageLayer from 'ol/layer/Image';
 import ImageWMS from 'ol/source/ImageWMS';
-import { IdentificateurService } from './identificateur.service';
 
 @Injectable({
   providedIn: 'root'
@@ -30,7 +29,7 @@ export class MapService {
   // availableModels: MapModel[];
 
 
-  constructor(private identificateurService: IdentificateurService) {
+  constructor() {
     // this.availableModels.push(new MapModel( "model1", ["ign_fondplan"] )); 
     // this.availableModels.push(new MapModel( "model2", ["xyz_basemap"] )); 
     // this.identificateurService.getSingleClick('singleclick');
