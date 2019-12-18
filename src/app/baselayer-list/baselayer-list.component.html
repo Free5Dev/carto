@@ -1,0 +1,11 @@
+<div *ngIf="layers"><b>Base Layers List = TRUE</b>
+    <ul class="layers" opacity=1 visibility=true>
+        <div *ngFor="let layer of layers">
+            <li>
+                <input type="radio" name="layer" id="layer.get('title')" value="layer.get('title')" [checked]="layer.get('visible')" (change)="onRadio($event)">
+                Visibilité ({{ layer.get('title')}})
+            </li>
+            <br>
+        </div>
+    </ul>
+</div>

@@ -1,0 +1,35 @@
+<section>
+    <article>
+        <app-map>
+            <!-- geoportail-->
+            <app-wms></app-wms>
+            <!--  -->
+            <app-wfs></app-wfs>
+            <!-- zoom-slider -->
+            <app-zoom-slider></app-zoom-slider>
+            <!-- full-screen -->
+            <app-full-screen></app-full-screen>
+            <!-- app-bookmarker -->
+            <app-bookmarker></app-bookmarker>
+            <!-- app-layer-switcher -->
+            <app-layer-switcher></app-layer-switcher>
+            <!-- print control -->
+            <!-- <app-print-control></app-print-control> -->
+        </app-map>
+    </article>
+    <aside>
+        <!-- <ul>
+            <layer id="label"/>
+            <layer id="geology"/>
+        </ul> -->
+        <b>Layers Item </b>
+        <ul>
+                <app-layer-item layerId="geologie"></app-layer-item>
+                <app-layer-item layerId="label"></app-layer-item>
+        </ul>
+       <app-layer-list></app-layer-list> 
+        <app-baselayer-list></app-baselayer-list>
+    </aside>
+</section>
+
+

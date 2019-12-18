@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+/* zoom slider between */
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+article{
+    flex: 3;
+}
+article .map {
+    height: 700px;
+    width: 100%;
+}
+aside{
+    flex: 1;
+    margin-left: 15px;
+    border: 1px solid #000;
+}
+aside b{
+    text-transform: uppercase;
+    color: blue;
+}

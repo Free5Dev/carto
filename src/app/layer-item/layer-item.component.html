@@ -1,0 +1,16 @@
+<div *ngIf="layer" class="external layerSwitcher" >
+    <div>
+        <ng-template [ngIf]="resolutionOk" [ngIfElse]="none">
+            <input type="checkbox" name="visible" id="visible" [checked]="layer.get('visible')" (change)="onChecked($event)"/> Visibilité 
+            {{ layer.get('title') }}
+        </ng-template>
+           
+        <ng-template #none>
+            <input type="checkbox" name="visible" id="visible" [checked]="layer.get('visible')" (change)="onChecked($event)"/> Visibilité 
+            {{ layer.get('title') }} 
+            <br>
+            Gélogie inexistant
+        </ng-template>
+    </div>    
+</div>
+

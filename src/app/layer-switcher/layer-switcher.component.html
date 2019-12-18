@@ -1,0 +1,14 @@
+<div *ngIf="layers" class="external layerSwitcher" ><b>External layer switcher</b>
+    <ul class="layers" opacity=1 visibility=true>
+        <li *ngFor="let layer of layers" >
+          
+          {{ layer.get('title') }}: Visibility: 
+          <ng-template [ngIf]=" layer.get('visible') === true" [ngIfElse]="none">
+            <span [ngStyle]="{'background-color': 'blue', 'color': 'white', 'padding': 5, 'text-transform': 'uppercase'}">{{ layer.get('visible')}} </span>
+          </ng-template>
+           <ng-template #none>
+            <span [ngStyle]="{'background-color': 'red', 'color': 'white', 'padding': 5, 'text-transform': 'uppercase'}">{{ layer.get('visible')}} </span>
+          </ng-template>
+        </li>
+      </ul>
+    </div>
