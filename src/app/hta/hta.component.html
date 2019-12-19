@@ -1,0 +1,17 @@
+<div>
+    <input type="text" placeholder="Valeur Depart Hta" id="searchHta">
+    <input type="submit" (click)="onClickMe()" id="btn" value="Search Hta"/>
+</div>
+
+<div>
+    <input type="submit" (click)="onZoomMe()" id="btn" value="Zoom Hta"/>
+    <input type="submit" (click)="onFilterMe()" id="btn" value="Filter Hta"/>
+</div>
+
+<ng-template [ngIf]="" [ngIfElse]="none">
+</ng-template>
+
+<ng-template #none>
+</ng-template>
+
+<p *ngIf="searchFeatures">{{ searchFeatures }}</p>
